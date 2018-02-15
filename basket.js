@@ -7,7 +7,7 @@ const Basket = function(){
 
 Basket.prototype.addItem = function(item){
     this.items.push(item)
-    if (this.hashMap[item.name] == undefined){
+    if (this.hashMap[item.name] === undefined){
       this.hashMap[item.name] = 1;
     }
     else {
